@@ -1,0 +1,75 @@
+@import '@constants/colors';
+
+.main-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.main-container h1 {
+  margin-top: 0;
+}
+
+.url-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.url-list__item {
+  border: 1px solid $border;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    background-color: $error;
+    color: $primary;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}
+
+.open-modal-button {
+  background-color: $btn;
+  color: $primary;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  &:active {
+    background-color: $btn-active;
+  }
+}

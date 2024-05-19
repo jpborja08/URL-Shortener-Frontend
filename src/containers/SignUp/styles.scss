@@ -1,0 +1,15 @@
+@import "@constants/colors";
+
+.signup-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $container-primary ;
+  box-shadow: 17px 1px 63px -5px $shadow;
+  padding: 2% 5% 5% 5%;
+  flex-direction: column;
+  margin: 0 20%;
+  border-radius: 10px;
+}

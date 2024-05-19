@@ -1,0 +1,56 @@
+@import '@constants/colors';
+
+.user {
+  background-color: $primary;
+  box-shadow: 0 2px 4px $shadow;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: $link;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: $link-active;
+    }
+  }
+
+  &__email {
+    color: $info;
+    font-size: smaller;
+    margin-bottom: 10px;
+  }
+
+  &__follow-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: $btn;
+    color: $primary;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.followed {
+      background-color: $btn-disable;
+    }
+
+    &:hover {
+      background-color: $btn-hover;
+    }
+
+    &:active {
+      background-color: $btn-active;
+    }
+  }
+}

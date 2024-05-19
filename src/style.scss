@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:weight@400;700&display=swap");
+@import "@constants/colors";
+@import "@fontsource/source-sans-pro";
+
+$font: "Source Sans Pro";
+
+body {
+  font-family: $font;
+  color: $font-color-primary;
+  background-image: linear-gradient(85deg, #f5faff 32%, #dcecff 86%);
+}

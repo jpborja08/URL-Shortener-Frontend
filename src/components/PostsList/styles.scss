@@ -1,0 +1,29 @@
+@import '@constants/colors';
+
+.posts-container {
+  width: 100%;
+  padding: 24px 0 0;
+  border-radius: 15px;
+  box-shadow: 17px 1px 63px -5px $shadow;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+
+  &--center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__error-message {
+    align-items: center;
+    height: 100%;
+  }
+}

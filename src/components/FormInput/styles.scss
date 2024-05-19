@@ -1,0 +1,9 @@
+@import '@constants/colors';
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+input {
+  margin-top: 10px; // Add margin-bottom to add more separation between the label and the field
+}
