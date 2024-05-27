@@ -15,6 +15,7 @@ export const UrlFormModal = ({ isOpen, onClose = () => {} }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const [shortenUrlMutation, {
     isLoading,
@@ -24,6 +25,7 @@ export const UrlFormModal = ({ isOpen, onClose = () => {} }) => {
     try {
       await shortenUrlMutation(originalUrl).unwrap();
       toast.success('URL shortened successfully!');
+      reset();
       onClose?.();
     } catch (err) {
       toast.error('Something went wrong, try again.');
